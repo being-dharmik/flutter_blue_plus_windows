@@ -253,6 +253,7 @@ class BluetoothDeviceWindows extends FBP.BluetoothDevice {
 
   Future<void> createBond({
     int timeout = 90, // TODO: implementation missing
+    Uint8List? pin, // TODO: implementation missing
   }) async {
     try {
       await WinBle.pair(_address);

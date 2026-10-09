@@ -29,6 +29,7 @@ class BluetoothCharacteristicWindows extends BluetoothCharacteristic {
                   characteristicUuid: descriptor.characteristicUuid,
                   descriptorUuid: descriptor.uuid,
                   primaryServiceUuid: null, // TODO:  API changes
+      instanceId: 0, // Windows has no GATT instance ids
                 ),
             ],
             properties: BmCharacteristicProperties(
@@ -47,6 +48,7 @@ class BluetoothCharacteristicWindows extends BluetoothCharacteristic {
               indicateEncryptionRequired: false,
             ),
             primaryServiceUuid: null, // TODO:  API changes
+      instanceId: 0, // Windows has no GATT instance ids
           ),
         );
 

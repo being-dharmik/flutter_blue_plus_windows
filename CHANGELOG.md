@@ -1,3 +1,6 @@
+## 1.27.0
+* Support `flutter_blue_plus` 1.36+ (>=1.36.0 <2.0.0): the `Bm*` message classes now come from `flutter_blue_plus_platform_interface`, characteristic/descriptor messages need `instanceId` (always 0 on Windows), and `createBond` gains the `pin` parameter.
+
 ## 1.26.1
 * Add setOptions.
 

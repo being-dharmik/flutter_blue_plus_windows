@@ -1,3 +1,4 @@
+import 'package:flutter_blue_plus_platform_interface/flutter_blue_plus_platform_interface.dart';
 import 'package:flutter_blue_plus_windows/flutter_blue_plus_windows.dart';
 
 extension BluetoothCharacteristicExtension on BluetoothCharacteristic {
@@ -9,6 +10,7 @@ extension BluetoothCharacteristicExtension on BluetoothCharacteristic {
       descriptors: [for (final d in descriptors) d.toProto()],
       properties: properties.toProto(),
       primaryServiceUuid: null, // TODO:  API changes
+      instanceId: 0, // Windows has no GATT instance ids
     );
   }
 }
